@@ -1,0 +1,8 @@
+.param w_m1=244.740000u 
+.param w_m2=244.740000u 
+.param w_m3=135.430000u 
+.param w_m4=135.430000u 
+.param w_m5=253.160000u 
+.param w_m6=4.890000u 
+.param w_m7=640.000000u 
+.param w_m8=133.160000u 

@@ -1,0 +1,9 @@
+START report: Sat Apr 14 23:42:11 2018 
+** Error: (eldo-1577)  In file "./cmosota_apr2018.spi" line 28:
++   OBJECT "M6": Model 1U not yet defined.
+** Error: (eldo-873)  In file "./cmosota_apr2018.spi" line 28:
++    OBJECT "M6": Missing L or W specification to enable 
++    appropriate model selection
+** Warning: (eldo-265)  In file "./cmosota_apr2018.spi" line 28:
++    OBJECT "M6":W or L not specified on that device..
++   Default setting relevant to that model will be used

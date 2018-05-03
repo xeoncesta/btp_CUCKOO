@@ -1,0 +1,45 @@
+
+*ECE_BTP-2018---
+
+.INCLUDE "$ADK/technology/ic/models/tsmc018.mod"
+.include "./width.txt"
+.CONNECT GROUND 0
+.global VDD VSS GROUND
+
+        V- VSS GROUND DC -1.8V
+        V+ VDD GROUND DC 1.8V
+	
+	VIN- 8 GROUND DC 0
+	*VIN+ 7 GROUND DC 0 	
+	VIN+ 7 GROUND AC 1m
+	*VIN+ 7 GROUND PULSE(-1 1 1FS 1FS 1FS 50US 100US)
+
+        IBIAS VDD 1 DC 35uA
+
+        CC 2 6 3.5p
+	CL 6 GROUND 4p
+        RC 3 2 2.3k
+
+        M8 6 1 VSS VSS N L=1u W=w_m8 M=1
+*L=1U W=19.5U M=1
+
+        M7 5 1 VSS VSS N L=1u W=w_m6 M=1
+*0.427
+*L=1U W=10U M=1
+
+        M6 1 1 VSS VSS N  L=1u W=w_m6 M=1
+*L=1U W=5U M=1
+        M5 6 3 VDD VDD P L=1u W=w_m5 M=1
+*L=1U W=3.17U M=1
+        M4 3 4 VDD VDD P L=1u W=w_m4 M=1
+*L=1U W=3.17U M=1
+        M3 4 4 VDD VDD P L=1u W=w_m3 M=1
+*L=1U W=3.17U M=1
+        M2 3 7 5 5     N L=1u W=w_m2 M=1 
+*L=1U W=6.28U M=1
+        M1 4 8 5 5     N L=1u W=w_m1 M=1
+*L=1U W=6.28U M=1
+
+
+.OP
+.END

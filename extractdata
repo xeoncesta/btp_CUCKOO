@@ -1,0 +1,4 @@
+#!/bin/bash
+grep "*FGBW" dump_file.txt | gawk '{print $3}' > f3db.txt
+grep "*PHASEMARGIN" dump_file.txt | gawk '{print $3}' > pm.txt
+grep "*GAIN" dump_file.txt | gawk '{print $3}' > vmax.txt

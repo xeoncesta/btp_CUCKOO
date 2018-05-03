@@ -1,0 +1,25 @@
+
+.INCLUDE "/root/Desktop/ece1/temp.spi"
+
+.PROBE I
+.PROBE V
+
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION NOASCII
+.OPTION MODWL
+
+.DEFWAVE gain = V(6)/V(7)  
+.PLOT AC W(gain)
+
+*.DC VIN+ -1.8 1.8 0.1
+.AC DEC 10 1 100MEG
+*.TRAN 0.1m 3m
+
+*.EXTRACT TRAN label=slew FILE=dump_file.txt slewrate(V(6)) 
+.EXTRACT AC label=fgbw FILE=dump_file.txt xdown(Wdb(gain),0)
+.EXTRACT AC label=phasemargin FILE=dump_file.txt (180+yval(Wp(gain),fgbw))
+.EXTRACT AC label=gain FILE=dump_file.txt max(Wdb(gain))
+*.NOISE V(6) VIN+ 10 2 
+*.PLOT NOISE INOISE
+*.EXTRACT AC label=noise FILE=dump_file.txt YVAL(INOISE,XMIN(INOISE))

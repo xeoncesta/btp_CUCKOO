@@ -1,0 +1,7 @@
+
+TITLE NO_TITLE
+EXTRACT for AC ANALYSIS                       
+  TEMPERATURE =  27.0000     Celsius
+    *FGBW =  12.1442MEG    
+    *PHASEMARGIN =  98.3530       
+    *GAIN =  23.0775       

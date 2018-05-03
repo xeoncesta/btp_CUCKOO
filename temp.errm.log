@@ -1,0 +1,4 @@
+START report: Tue Apr 24 00:01:58 2018 
+** Warning: (eldo-65)  In file "./temp.spi" line 26:
++   Probably missing surrounding ' or {} at or near 2*W_M6
++   Eldo will consider that as an expression, which is may be not what is expected.
