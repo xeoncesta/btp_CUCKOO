@@ -12,3 +12,4 @@ Optimisation of Analog Circuits Using Cuckoo Search Algorithm And Firefly Algori
 
 >width.txt :final width of the mosfets for which tests were performed.
 
+>cuckootemp: Matlab code for cuckoo search optimisation Algo [Better than firefly].
