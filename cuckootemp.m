@@ -38,7 +38,7 @@ Ub=[550.54 143.43 340.16 489.51 658];  % --for our ckt
 arr=0*ones(250,1);
 temp=[1 1 1];
 low_lim = [55 40 45 ];	%0.002 10 10^7 10 ];
-up_lim = [68 50 60 ];	%0.0005 20^6 10000];
+up_lim = [80 50 60 ];	%0.0005 20^6 10000];
 % Random initial solutions
 for i=1:n
 nest(i,:)=Lb+(Ub-Lb).*rand(size(Lb));
